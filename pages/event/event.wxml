@@ -1,0 +1,6 @@
+
+<view class="container vertical centered">
+  <view>
+    <text class="header">event~！</text>
+  </view>
+</view>
