@@ -1,14 +1,14 @@
 App({
+
+  globleData: {
+
+  },
   onLaunch(){
-    console.log('初始化！')
-  },
-  onShow(){
-    console.log('显示')
-  },
-  onHide(){
-    console.log('隐藏')
-  },
-  onError(error){
-    console.log(error)
+    wx.request({
+      url:'https://resources.ninghao.net/wxapp-case/db.json',
+      success:(response) => {
+        Object.assign(this.globleData, response.data)
+      }
+    })
   }
 })
